@@ -63,7 +63,7 @@ function Report() {
       formData.append("image", image);
       formData.append("description", description);
 
-      const response = await fetch("http://127.0.0.1:8000/analyze", {
+      const response = await fetch("https://civic-ai-backend-2mmb.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
@@ -121,7 +121,7 @@ function Report() {
         formData.append("longitude", longitude);
       }
 
-      const response = await fetch("http://127.0.0.1:8000/reports", {
+      const response = await fetch("https://civic-ai-backend-2mmb.onrender.com/reports", {
         method: "POST",
         body: formData,
       });
